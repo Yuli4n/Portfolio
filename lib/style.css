@@ -1,0 +1,209 @@
+/*
+Proyecto basado en el tutorial para portafolio de "Código Web"
+Link tutorial: https://www.youtube.com/watch?v=2s19KJq49rQ&ab_channel=C%C3%B3digoWeb
+Link proyecto en github: https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbTBlaGc2UWhycnROZF9tSTRwcEZvMU00SWpKUXxBQ3Jtc0tuVExCUi04bko0RDlyQmRYOGdsZFRubzlxYnd6Y0JfZURjc0FOcy0zU0w5S0hScmxLMVhZaVNsR04yOGtTSm8wM1JSSS00b2stOTg4UndKckNCLXlGNUVRSUo1NXk5MFByeG9BdmdaRUEtQ1ViX0EwUQ&q=https%3A%2F%2Fgithub.com%2Fcodigowebmp%2Fportfolio-nick&v=2s19KJq49rQ
+*/
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'Work Sans';
+    margin: 0;
+    padding: 0;
+}
+html{
+    /* me permite deslizar cuando hago clic en los links del menu */
+    scroll-behavior: smooth;
+}
+.container-fluid header{
+    background: #1e2326;
+    position: fixed; /*Fija el banner arriba sin importar si me desplazo*/
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.container-fluid header .row{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+.container-fluid header .logo {
+    font-family: 'Righteous';
+    font-size: 36px;
+    color: #ff800f;
+    text-decoration: none;
+}
+.container-fluid header .options{
+    display: flex;
+}
+.container-fluid header .options a{
+    color: white;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+}
+.container-fluid header .options a:hover{
+    color: #1CB698;
+}
+
+.start {
+    background: linear-gradient(to top, rgba(30, 35, 38, .8), rgba(30, 35, 38, 1)), url(../Docs/fondo.png);
+    background-size: cover;
+    background-position: center top;
+    height: auto;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.start .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+.start .inicio{
+    padding: 20px;
+    background-color: #1e2326;
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+    border-radius: 40px;
+}
+.start .imagen img{
+    margin-top: 40px;
+    border: 10px solid #ff800f;
+    display: block;
+    width: 70%;
+    margin: auto;
+    border-radius: 100%;
+    
+}
+.start h1{
+    margin-top: 40px;
+    font-size: 42px;
+    font-family: 'Righteous';
+}
+.start h2{
+    font-size: 15px;
+    font-weight: normal;
+}
+.start a{
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid white;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+.start a:hover{
+    background-color: #ff800f;
+}
+
+
+.aboutme{
+    background-color: #1e2326;
+    color: #fff;
+    padding: 50px 20px;
+}
+.aboutme .sobremi{
+    max-width: 1100px;
+    margin: auto;
+}
+.aboutme h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+.aboutme h3{
+    font-size: 28px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+}
+.aboutme p{
+    font: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+.aboutme p span{
+    color: #ff800f;
+    font-weight: bold;
+}
+.aboutme .row .col{
+    margin: 12px 0;
+    width: 50%;
+}
+.aboutme .left{
+    color: #ff800f;
+    width: 130px;
+    font-weight: bold;
+}
+
+
+.contacta{
+    background: linear-gradient(to top, rgba(30, 35, 38, .8), rgba(30, 35, 38, 1)), url(../Docs/Contact.jpg);
+    background-size: cover;
+    background-position: center top;
+    height: auto;
+    color: white;
+    align-items: center;
+    margin: auto;
+    padding: 20px;
+}
+.contacta h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+.contacta th{
+    color: #ff800f;
+    width: 130px;
+    font-weight: bold;
+}
+.contacta .row{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.contacta table.table th {
+    border: none;
+}
+.contacta table.table td{
+    border: none;
+}
+.contacta input, .contacta textarea{
+    display: block;
+    width: 100%;
+    padding: 18px;
+    border: none;
+    margin-bottom: 20px;
+    background-color: #252A2E;
+    color: #fff;
+    font-size: 18px;
+}
+.contacta button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}

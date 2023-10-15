@@ -1,0 +1,123 @@
+<!-- 
+Proyecto basado en el tutorial para portafolio de "Código Web"
+Cómo crear un PORTFOLIO WEB paso a paso - HTML - CSS - JS
+Link tutorial: https://www.youtube.com/watch?v=2s19KJq49rQ&ab_channel=C%C3%B3digoWeb
+Link proyecto en github: https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbTBlaGc2UWhycnROZF9tSTRwcEZvMU00SWpKUXxBQ3Jtc0tuVExCUi04bko0RDlyQmRYOGdsZFRubzlxYnd6Y0JfZURjc0FOcy0zU0w5S0hScmxLMVhZaVNsR04yOGtTSm8wM1JSSS00b2stOTg4UndKckNCLXlGNUVRSUo1NXk5MFByeG9BdmdaRUEtQ1ViX0EwUQ&q=https%3A%2F%2Fgithub.com%2Fcodigowebmp%2Fportfolio-nick&v=2s19KJq49rQ
+-->
+
+
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lib/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>About Julian Contreras</title>
+  </head>
+
+  <body>
+
+    <div class="container-fluid">
+      <!-- Banner Superior -->
+      <header>
+        <div class="row">
+          <div class="col"><a class="logo" href="#">Julian</a></div>
+            <div class="options">
+              <div class="col"><a class="nav-link text-truncate" href="#start">START</a></div>
+              <div class="col"><a class="nav-link text-truncate" href="#aboutme">ABOUT ME</a></div>
+              <div class="col"><a class="nav-link text-truncate" href="#skills">SKILLS</a></div>
+              <div class="col"><a class="nav-link text-truncate" href="#curriculum">CURRICULUM</a></div>
+              <div class="col"><a class="nav-link text-truncate" href="#contact">CONTACT ME</a></div>
+          </div>
+        </div>
+      </header>
+
+      <div class="row mb-5"></div>
+
+      <!-- Start -->
+      <section id="start" class="start">
+        <div class="inicio">
+          <div class="row imagen"><img src="Docs/Front.png" alt="Main Front Picture"></div>
+          <div class="row nombre"><h1>Julián Contreras Velandia</h1></div>
+          <div class="row profesion"><h2>Ingeniero de Sistemas y Computación</h2></div>
+          <div class="row redes">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/___elyulian___/"><i class="fa-brands fa-instagram"></i></i></a>
+            <a href="https://github.com/Yuli4n"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </section>
+      
+      <section id="aboutme" class="aboutme">
+        <div class="sobremi">
+          <h2>About Me</h2>
+          <p><span>Hi! My name is Julián Contreras</span>, I am a Computer and systems engineer student at Los Andes University in Bogotá, Colombia. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius dignissimos nostrum delectus, consectetur, provident temporibus molestiae maxime quos consequuntur omnis enim iure vitae beatae magnam repudiandae aperiam. Delectus, modi impedit.</p>
+          <h3>Personal information</h3>
+          <div class="row">
+            <div class="col left">Country</div>
+            <div class="col right">Colombia</div>
+          </div>
+          <div class="row">
+            <div class="col left">Birthday</div>
+            <div class="col right">September 3th 2004</div>
+          </div>
+          <div class="row">
+            <div class="col left">Languages</div>
+            <div class="col right">English, Spanish</div>
+          </div>
+          <div class="row">
+            <div class="col left">Phone Number</div>
+            <div class="col right">+57 3195537866</div>
+          </div>
+          <div class="row">
+            <div class="col left">Email</div>
+            <div class="col right">julicontrerasv@gmail.com</div>
+          </div>
+          <div class="row">
+            <div class="col left">Address</div>
+            <div class="col right">Cra. 1 #18a-12</div>
+          </div>
+          <div class="row">
+            <div class="col left">Current Job</div>
+            <div class="col right">Student</div>
+          </div>
+          
+
+        </div>
+      </section>
+
+
+      <!-- Contact Me -->
+      <section id="contact" class="contact">
+        <div class="contacta">
+          <h2>Contact Me</h2>
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone Number</th>
+                <th>Subject</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td> <input type="text" class="input-small" placeholder="Your Name"></td>
+                <td> <input type="text" class="input-mini" placeholder="Your Email"></td>
+                <td> <input type="text" class="input-mini" placeholder="Your Phone Number"></td>
+                <td> <input type="text" class="input-mini" placeholder="Email's Subject"></td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="row"><textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea></div>
+          <div class="row"><button onclick=" ">Send</button></div>
+        </div>
+      </section>
+    </div>
+    
+  </body>
+</html>
